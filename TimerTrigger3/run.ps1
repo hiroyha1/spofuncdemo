@@ -13,6 +13,8 @@ if ($Timer.IsPastDue) {
 
 Write-Host "PowerShell timer trigger function ran! TIME: $currentUTCtime"
 
+Write-Host $env:PASS
+
 Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking -UseWindowsPowerShell
 $cred = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $env:USER, $(ConvertTo-SecureString $env:PASS -AsPlainText -Force)
 Connect-SPOService -Url $env:URL -Credential $cred
