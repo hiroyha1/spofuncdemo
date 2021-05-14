@@ -6,4 +6,5 @@
     # To use the Az module in your function app, please uncomment the line below.
     # 'Az' = '5.*'
     'Microsoft.Online.SharePoint.PowerShell' = '16.*'
+    'MicrosoftTeams' = '2.*'
 }
