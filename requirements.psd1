@@ -4,7 +4,7 @@
 @{
     # For latest supported version, go to 'https://www.powershellgallery.com/packages/Az'.
     # To use the Az module in your function app, please uncomment the line below.
-    # 'Az' = '5.*'
+    'Az' = '5.*'
     'Microsoft.Online.SharePoint.PowerShell' = '16.*'
     'MicrosoftTeams' = '2.*'
 }
